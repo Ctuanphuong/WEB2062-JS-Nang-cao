@@ -25,7 +25,7 @@ const restaurant = {
   },
   orderDelivery: function ({
     starterIndex = 4,
-    mainIndex = 0,
+    mainIndex = 1,
     time = "20:00",
     address,
   }) {
@@ -44,9 +44,13 @@ const restaurant = {
   },
 };
 
-console.log("PART 9 - 103");
-//destructuring arr
+console.log("==========================================================");
+console.log("PART 9 - 106");
+
 /*
+console.log("PART 9 - 103");
+
+// destructuring arr
 const arr = [18, 3, 8];
 
 const a = arr[0];
@@ -58,18 +62,18 @@ console.log(a, b, c);
 const [x, y, z] = arr;
 console.log(x, y, z);
 console.log(arr);
-*/
-//destructuring Restaurant array
+
+//DESRTRUCTURING Restaurant array
 let [main, secondary] = restaurant.categories;
 console.log(main, secondary);
 
 // switching variables
-/** 
+
 const temp = main;
 main = secondary;
 secondary = temp;
 console.log(main, secondary);
-*/
+
 
 [main, secondary] = [secondary, main];
 console.log(main, secondary);
@@ -87,7 +91,8 @@ console.log(i, j, k);
 // default values
 const [p = 1, m = 1, y = 1] = [8, 9];
 console.log(p, m, y);
-
+*/
+/** 
 console.log("==========================================================");
 console.log("PART 9 - 104");
 // destructuring object
@@ -130,6 +135,9 @@ restaurant.orderDelivery({
   address: "Via del Sole, 225",
   mainIndex: 1,
 });
+*/
+
+/** 
 console.log("==========================================================");
 console.log("PART 9 - 105: The Spread Operator");
 
